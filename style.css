@@ -1,0 +1,445 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.cabecera__logo {
+    max-width: 80px;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    align-items: center;
+    /* Alinear los elementos verticalmente al centro */
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    padding: 2rem;
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.presentacion__contenedor {
+    display: flex;
+    flex-direction: column;
+    /* Disposición vertical de los elementos */
+    max-width: 60%;
+    /* Ancho máximo del contenedor */
+}
+
+.presentacion__titulo {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.presentacion__subtitulo {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.redes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Disposición horizontal de los elementos */
+    flex-direction: row;
+    /* Disposición horizontal de los elementos */
+    gap: 1rem;
+    /* Espacio entre los elementos */
+}
+
+.redes__img a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.redes__img img {
+    margin-left: 0.5rem;
+}
+
+.presentacion__foto {
+    width: 20%;
+    /* Ancho de la imagen reducido */
+    height: auto;
+    border-radius: 50%;
+    /* Bordes redondeados para la imagen */
+    margin-left: 2rem;
+    /* Espacio entre la imagen y el contenido */
+    order: 2;
+    /* Mover la imagen al final en el contenedor flex */
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi {
+    background-color: #b3e5fc;
+    /* Fondo celeste pastel */
+    padding: 2rem;
+    text-align: left;
+    /* Alinear todo el contenido a la izquierda */
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.sobre-mi__titulo {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sobre-mi__texto {
+    text-align: justify;
+    /* Justificar el texto */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    text-align: center;
+    /* Centrar el título de la sección de habilidades */
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.habilidades__titulo {
+    margin-bottom: 1rem;
+    /* Espaciado inferior opcional */
+}
+
+.habilidades__lista {
+    display: flex;
+    flex-direction: row;
+    /* Disposición horizontal */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan si es necesario */
+    justify-content: center;
+    /* Centrar los elementos horizontalmente */
+    padding: 0;
+    list-style: none;
+}
+
+.habilidades__elemento {
+    background-color: white;
+    /* Fondo blanco para cada caja */
+    margin: 1rem;
+    /* Margen entre las cajas */
+    padding: 2rem;
+    /* Espaciado interno para cada caja */
+    border-radius: 0.5rem;
+    /* Bordes redondeados opcionales */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional para efecto de caja */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    /* Ancho fijo para todas las cajas */
+    height: 80px;
+    /* Alto fijo para todas las cajas */
+}
+
+/*------------------------------ Sección de Academico--------------------------------*/
+.formacion {
+    text-align: center;
+    /* Centrar el título de la sección de formación */
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.formacion__titulo {
+    margin-bottom: 1rem;
+    /* Espaciado inferior opcional */
+}
+
+.formacion__lista {
+    display: flex;
+    flex-direction: row;
+    /* Disposición horizontal */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan si es necesario */
+    justify-content: center;
+    /* Centrar los elementos horizontalmente */
+    padding: 0;
+    list-style: none;
+}
+
+.formacion__elemento {
+    background-color: white;
+    /* Fondo blanco para cada caja */
+    margin: 1rem;
+    /* Margen entre las cajas */
+    padding: 2rem;
+    /* Espaciado interno para cada caja */
+    border-radius: 0.5rem;
+    /* Bordes redondeados opcionales */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional para efecto de caja */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    /* Ancho fijo para todas las cajas */
+    height: 250px;
+    /* Alto fijo para todas las cajas */
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos {
+    text-align: center;
+    /* Centrar el título de la sección de proyectos */
+    padding: 2rem;
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.proyectos__titulo {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.proyectos__contenedor {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    /* Para centrar los contenedores */
+    text-align: left;
+    /* Alinear el texto a la izquierda dentro del contenedor */
+    width: 80%;
+    /* Ancho del contenedor */
+}
+
+.proyectos__nombre {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.proyectos__descripcion {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.proyectos__botones {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinear los botones a la derecha */
+    gap: 1rem;
+    /* Espacio entre los botones */
+}
+
+.proyectos__boton {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.proyectos__boton:hover {
+    background-color: #0056b3;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto {
+    padding: 2rem;
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+}
+
+.contacto__titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contacto__contenido {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contacto__imagen {
+    width: 40%;
+    /* Ancho de la imagen */
+    height: auto;
+    margin-right: 2rem;
+    /* Espacio entre la imagen y el formulario */
+}
+
+.contacto__texto-formulario {
+    width: 60%;
+    /* Ancho del contenedor de texto y formulario */
+}
+
+.contacto__texto-formulario p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contacto__campo {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contacto__campo:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contacto__campo--textarea {
+    height: 150px;
+    /* Altura del textarea */
+    resize: vertical;
+    /* Permitir redimensionar verticalmente */
+}
+
+.contacto__boton {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+    background-color: #0056b3;
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
